@@ -1,0 +1,281 @@
+@font-face {
+    font-family: "Fira Code";
+    src: url("src/font/FiraCode-VariableFont_wght.woff2");
+}
+body {
+    font-family: 'Fira Code', sans-serif;
+    background-color: #282C33;
+    color: white;
+    margin: 0;
+    position: relative;
+}
+header {
+    position: fixed;
+    top: 1.5rem;
+    background-color: #b6b4bd;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border: 1px solid #ffffff;
+    justify-self: center;
+    border-radius: 8px;
+    z-index: 3;
+    gap: 30px;
+    display: flex;
+}
+header img {
+    width: 30px;
+}
+@media (max-width:768px) {
+    header img {
+        width: 20px;
+    }
+}
+main {
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    top: 6.5rem;
+    position: relative;
+}
+aside {
+    position: sticky;
+    top: 40px;
+    align-self: start;
+    padding: 50px;
+    z-index: 0;
+}
+article {
+    background-color: #252526;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    z-index: 1;
+}
+@media (max-width:768px) {
+    main {
+        flex-direction: column;
+        gap:0px;
+    }
+    .count span {
+        font-size: 50px!important;;
+        color: #16a34a!important;
+    }
+
+}
+h1 {
+    font-size: 6.25em;
+    margin:0;
+    line-height: 100%;
+}
+@media(max-width:768px) {
+    h1 {
+        font-size: 3.25em;
+    }
+}
+h1 span {
+    color: #b6b4bd33;
+}
+h2 {
+    color:#CE9178;
+}
+p {
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+a:hover *{
+    color:#CE9178!important;
+}
+a:hover svg path {
+    stroke:#CE9178!important;
+}
+input, textarea {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: .5rem .75rem;
+    margin-bottom: .5rem;
+    background-color: #b6b4bd33;
+    color: #AEAFAD;
+    resize: none;
+}
+input:focus, textarea:focus {
+    outline: 1px solid #007acc;
+}
+
+/*Global*/
+.line-contact {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    z-index: 2;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+}
+.flex {
+    display: flex;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.code-line {
+    padding-left: calc(1em * var(--tab-level));
+  }
+
+.codeviolet {
+    color: #FF79C6;
+}
+.codejaune {
+    color: #DCDCAA;
+}
+.colorblue {
+    color: #569CD6;
+}
+
+.colorvariable {
+    color: #9CDCFE;
+}
+.codeblanc {
+    color: #D4D4D4;
+}
+.codecomment {
+    color: #6A9955;
+    font-style: italic;
+}
+pre {
+    color: #569CD6!important;
+    font-size: 14px;
+}
+span.chevauche {
+    color: #AEAFAD;
+}
+.item-soft {
+    font-size: 12px;
+    display: inline-flex;
+    background-color: #b6b4bd33;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border: 1px solid #ffffff1a;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/*About Me*/
+div#about-me {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+.count {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.count p {
+    text-align: center;
+    color: #b6b4bd !important;
+    font-weight: 700;
+    margin: 0;
+}
+.count span {
+    font-size: 70px;
+    color: #16a34a!important;
+}
+
+.container-soft {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+
+
+
+
+/*Project*/
+.item-soft.project {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .75rem;
+    width: 100%;
+}
+.item-soft.project * {
+    margin: 0;
+}
+.project .item-soft {
+    border-color: #9CDCFE;
+    color: #9CDCFE;
+    background-color: transparent;
+}
+.container-action {
+    display: flex;
+    gap:1.5em;
+}
+.container-action * {
+    display: flex;
+    gap:0.5em;
+    font-size: 11px;
+    color: #AEAFAD;
+}
+.progressbar {
+    height: 2px;
+}
+
+
+/*Skills*/
+.flex.container-skill span {
+    font-size: 12px;
+}
+.flex.container-skill span:first-of-type {
+    width: 10rem;
+    color: #AEAFAD;
+}
+.container-skill {
+    gap: 10px;
+}
+.content {
+    place-content: center;
+}
+#skills .codecomment {
+    margin-bottom: 0;
+}
+
+/*Contact*/
+.field {
+    display: flex;
+    gap: .5rem;
+}
+#submitButtom {
+    background-color: #007acc;
+    cursor: pointer;
+}
+.container-message {
+    margin-left: 16px;
+}
+.container-message.success {
+    background-color: #4CAF50;
+    border: 1px solid #C3E6CB;
+}
+.container-message.error {
+    background-color: #F44336;
+    border: 1px solid #F5C6CB;
+}
+#message {
+    display: flex;
+    gap:5px;
+    color: #AEAFAD;
+    color: #AEAFAD;
+    line-height: 100%;
+    align-items: center;
+}
