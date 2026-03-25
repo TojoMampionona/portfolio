@@ -48,6 +48,12 @@ aside {
     padding: 50px;
     z-index: 0;
 }
+@media (max-width:768px) {
+    aside {
+        position: static;
+    }
+
+}
 article {
     background-color: #252526;
     padding: 50px;
